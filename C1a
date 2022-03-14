@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "LE35ZYYx4_Az"
+      },
+      "outputs": [],
+      "source": [
+        "from abc import ABCMeta, abstractmethod\n",
+        "\n",
+        "class Votante(metaclass=ABCMeta):\n",
+        "    \n",
+        "    def __init__(self,nombre):\n",
+        "        self.nombre = nombre\n",
+        "\n",
+        "class Votar:\n",
+        "    fila1= 0\n",
+        "    fila2 = 0\n",
+        "    def __init__(self,nombre,edad,fila):\n",
+        "        self.edad= edad\n",
+        "        self.fila = fila\n",
+        "        self.votó= False\n",
+        "        \n",
+        "    def votó(self,fila):\n",
+        "        self.votó = True\n",
+        "        \n",
+        "    def edad(nombre,edad):\n",
+        "        if edad< 60:\n",
+        "            fila1=fila1 +1\n",
+        "            \n",
+        "        else:\n",
+        "            fila2= fila2+1\n",
+        "            \n",
+        "    def \n",
+        "                \n",
+        "                \n",
+        "                \n",
+        "class Filas:\n",
+        "     \n",
+        "    fila1 = 0\n",
+        "    fila2 = 0\n",
+        "    def edad(nombre,edad):\n",
+        "        if edad< 60:\n",
+        "            fila1=fila1 +1\n",
+        "            \n",
+        "        else:\n",
+        "            fila2= fila2+1"
+      ]
+    }
+  ]
+}
